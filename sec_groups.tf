@@ -36,7 +36,7 @@ resource "azurerm_network_security_group" "nsg_backend" {
   resource_group_name = azurerm_resource_group.rg.name
 
   security_rule {
-    name                       = "AllowVMLUEInbound"
+    name                       = "AllowInboundFromVMLUE"
     priority                   = 100
     direction                  = "Inbound"
     access                     = "Allow"

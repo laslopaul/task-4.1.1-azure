@@ -69,6 +69,6 @@ resource "azurerm_linux_virtual_machine" "vmlue01" {
 
   admin_ssh_key {
     username   = "sysadmin"
-    public_key = tls_private_key.example_ssh.public_key_openssh
+    public_key = tls_private_key.ssh_vmlue01.public_key_openssh
   }
 }

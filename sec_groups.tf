@@ -23,7 +23,7 @@ resource "azurerm_network_security_group" "nsg_vmlue01" {
     access                     = "Allow"
     protocol                   = "Tcp"
     source_port_range          = "*"
-    destination_port_range     = "21"
+    destination_port_ranges    = ["20-21", "21100-21110"]
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   }

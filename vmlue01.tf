@@ -49,7 +49,7 @@ resource "azurerm_linux_virtual_machine" "vmlue01" {
     azurerm_network_interface.nic_front_vmlue01.id,
     azurerm_network_interface.nic_back_vmlue01.id
   ]
-  size = "Standard_B1ls"
+  size = "Standard_B1s"
 
   os_disk {
     caching              = "None"

@@ -26,7 +26,7 @@ resource "azurerm_linux_virtual_machine" "vmlu01" {
   location              = azurerm_resource_group.rg.location
   resource_group_name   = azurerm_resource_group.rg.name
   network_interface_ids = [azurerm_network_interface.nic_vmlu01.id]
-  size                  = "Standard_B1ls"
+  size                  = "Standard_B1s"
 
   os_disk {
     caching              = "None"

@@ -36,7 +36,7 @@ resource "azurerm_linux_virtual_machine" "vmlu02" {
   source_image_reference {
     publisher = "Canonical"
     offer     = "UbuntuServer"
-    sku       = "20.04-LTS"
+    sku       = "18.04-LTS"
     version   = "latest"
   }
 

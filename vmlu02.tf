@@ -10,7 +10,7 @@ resource "azurerm_network_interface" "nic_vmlu02" {
     name                          = "internal_static"
     subnet_id                     = azurerm_subnet.subnetbe01.id
     private_ip_address_allocation = "Static"
-    private_ip_address            = "10.0.20.4"
+    private_ip_address            = "10.0.20.12"
   }
 }
 

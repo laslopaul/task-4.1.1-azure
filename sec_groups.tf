@@ -43,13 +43,13 @@ resource "azurerm_network_security_group" "nsg_backend" {
     protocol                   = "*"
     source_port_range          = "*"
     destination_port_range     = "*"
-    source_address_prefix      = "10.0.20.2/32"
+    source_address_prefix      = "10.0.20.10/32"
     destination_address_prefix = "10.0.20.0/24"
   }
 
   security_rule {
     name                       = "DenyVnetInbound"
-    priority                   = 101
+    priority                   = 200
     direction                  = "Inbound"
     access                     = "Deny"
     protocol                   = "*"

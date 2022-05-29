@@ -1,7 +1,7 @@
 # Create resource group
 resource "azurerm_resource_group" "rg" {
   name     = "RG_TASK_411"
-  location = "eastus"
+  location = "japaneast"
 }
 
 # Create virtual network

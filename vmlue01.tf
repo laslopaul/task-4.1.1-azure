@@ -65,6 +65,7 @@ resource "azurerm_linux_virtual_machine" "vmlue01" {
 
   computer_name                   = "vmlue01"
   admin_username                  = "sysadmin"
+  custom_data                     = filebase64("cloudinit/bootstrap_vmlue.yaml")
   disable_password_authentication = true
 
   admin_ssh_key {

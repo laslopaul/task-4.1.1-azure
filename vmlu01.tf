@@ -42,6 +42,7 @@ resource "azurerm_linux_virtual_machine" "vmlu01" {
 
   computer_name                   = "vmlu01"
   admin_username                  = "sysadmin"
+  custom_data                     = filebase64("cloudinit/add_publickey.yaml")
   disable_password_authentication = true
 
   admin_ssh_key {
